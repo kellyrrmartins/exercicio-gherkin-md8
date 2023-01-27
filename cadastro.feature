@@ -15,6 +15,12 @@
     E todos os campos obrigatórios
     Então redirecionar para página de usuario
 
+     Example:
+            | formatoemail              |
+            | "usuario@ebacshop.com.br" |
+            | "usuario@shopebac.com.br" |
+            | "usuario@ebac.com.br  "   |
+
 
 
     Cenário: formato de email inválido
@@ -25,8 +31,4 @@
     Quando usuario deixar campos obrigatórios sem preecher
     Então exibir mensagem de alerta "Por favor, preencha todos os campos obrigatórios"
 
-    Example:
-            | formatoemail              |
-            | "usuario@ebacshop.com.br" |
-            | "usuario@shopebac.com.br" |
-            | "usuario@ebac.com.br  "   |
+   
